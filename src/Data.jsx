@@ -10,13 +10,14 @@ const Data = () => {
     const jsonData = await rawData.json();
     setData(jsonData);
   };
+
   useEffect(() => {
     getData(url);
   }, []);
   console.log(Data);
 
   return Data;
-  
+
 };
 
 export default Data;
