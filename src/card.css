@@ -8,3 +8,17 @@
   transform: scale(1.2);
   transition: transform 0.5s;
 }
+
+.movie-description {
+  display: none;
+  position: absolute;
+  max-width: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ecf0f1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content:hover .movie-description {
+  display: block;
+}

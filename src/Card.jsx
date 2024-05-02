@@ -6,16 +6,16 @@ const Card = ({ movie }) => {
   return (
     <Link to={`/movies/${movie.id}`} className="link">
       <div className="content">
-        <div className="movie_description">
-          <h1>{movie.title}</h1> <br />
-          <span>{movie.id}</span> <br />
-          <span>{movie.overview}</span>
-        </div>
         <img
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
           alt={movie.title}
           className="poster"
         />
+        <div className="movie-description">
+          <h1>{movie.title}</h1>
+          <span>{movie.runtime}</span>
+          <span>{movie.tagline}</span>
+        </div>
       </div>
     </Link>
   );

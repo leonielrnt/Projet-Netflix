@@ -9,33 +9,23 @@ const Movies = () => {
 
   const fetchData = async () => {
     const API_key = "b4302baf8209ba84d052739967ae763f";
-
     const response = await fetch(
       `https://api.themoviedb.org/3/movie/popular?api_key=${API_key}`
     );
-
     const data = await response.json();
-
     const uniqueMovies = [...new Set(data.results)];
-
     const shuffledMovies = uniqueMovies.sort(() => 0.5 - Math.random());
-
     setMovies(shuffledMovies);
   };
 
   const fetchTopRatedMovies = async () => {
     const API_key = "b4302baf8209ba84d052739967ae763f";
-
     const response = await fetch(
       `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_key}`
     );
-
     const data = await response.json();
-
     const uniqueMovies = [...new Set(data.results)];
-
     const shuffledMovies = uniqueMovies.sort(() => 0.5 - Math.random());
-
     setTopRatedMovies(shuffledMovies);
   };
 
