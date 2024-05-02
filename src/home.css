@@ -3,11 +3,6 @@
     width: auto;
 }
 
-.content:hover .movie_description{
-    cursor: pointer;
-    display: block;
-}
-
 .content {
     display: flex;
     flex-direction: row;
@@ -15,6 +10,9 @@
 
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.title {
     color: white;
 }
 
