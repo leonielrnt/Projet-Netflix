@@ -3,6 +3,12 @@
     width: auto;
 }
 
+.poster:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
 .content {
     display: flex;
     flex-direction: row;

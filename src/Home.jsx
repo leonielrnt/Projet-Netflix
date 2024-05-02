@@ -6,10 +6,10 @@ import "./home.css";
 const Movies = () => {
   return (
     <>
-    <h1>VIBE</h1>
+      <Header />
       <h2 className="title">Tous les films</h2>
       <div className="content">
-        {Array.from({ length: 7 }).map((_, i) => (
+        {Array.from({ length: 6 }).map((_, i) => (
           <Card key={i} />
         ))}
       </div>

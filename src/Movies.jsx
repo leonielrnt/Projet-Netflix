@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import Data from "./Data";
-// import Card from "./Card";
 import "./movies.css";
 import { Link, useParams } from "react-router-dom";
 

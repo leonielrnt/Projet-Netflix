@@ -3,6 +3,10 @@
     width: auto;
 }
 
+.poster:hover {
+    cursor: pointer;
+}
+
 .content {
     display: flex;
     flex-direction: row;
