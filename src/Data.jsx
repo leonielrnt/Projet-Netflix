@@ -1,37 +1,36 @@
 import React, { useEffect, useState } from "react";
 
 const Data = () => {
-  // const [Data, setData] = useState([]);
-
-  const [movies, setMovies] = useState([]);
-  const [randomMovie, setRandomMovie] = useState(null);
-
-  const getData = async () => {
-    const rawData = await fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=b4302baf8209ba84d052739967ae763f`
-    );
-    const jsonData = await rawData.json();
-    setMovies(jsonData.results);
-  };
-
-  const getRandomMovie = () => {
-    if (movies.length > 0) {
-      const randomIndex = Math.floor(Math.random() * movies.length);
-      setRandomMovie(movies[randomIndex]);
-    }
-  };
+  const API_key = "b4302baf8209ba84d052739967ae763f";
+  const [movies, setMovies] = useState([]); // Initialize with an empty array
 
   useEffect(() => {
-    getData();
+    const getMovieData = async () => {
+      const response = await fetch(
+        `https://api.themoviedb.org/3/movie/popular?api_key=${API_key}`
+      );
+      const data = await response.json();
+      const all_movies = data.results;
+
+      // Create a set to store unique movie IDs
+      const uniqueMovieIds = new Set();
+
+      // Filter out duplicate movies and add them to the state
+      const uniqueMovies = all_movies.filter((movie) => {
+        if (!uniqueMovieIds.has(movie.id)) {
+          uniqueMovieIds.add(movie.id);
+          return true;
+        }
+        return false;
+      });
+
+      setMovies(uniqueMovies);
+    };
+
+    getMovieData();
   }, []);
 
-  useEffect(() => {
-    getRandomMovie();
-  }, [movies]);
-
-  //   console.log(Data);
-
-  return randomMovie;
+  return movies; // Return the array of unique movie objects
 };
 
 export default Data;
