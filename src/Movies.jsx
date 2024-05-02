@@ -46,7 +46,7 @@ const Movies = () => {
             </div>
             <div className="tags">
               <span>
-                {Data.adult ? "Interdit aux moins de 18 ans" : "Tout public"} |{" "}
+                {Data.adult ? "Adult" : "All audiences"} |{" "}
                 {/* {Data.genres.map((genres) => genres.name).join(", ")} |{" "} */}
               </span>
             </div>
