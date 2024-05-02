@@ -1,11 +1,6 @@
 .poster {
-    height: 300px;
+    height: 150px;
     width: auto;
-}
-
-.content:hover .movie_description{
-    cursor: pointer;
-    display: block;
 }
 
 .content {
