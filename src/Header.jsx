@@ -10,7 +10,7 @@ const Header = () => {
           <p className="links">Accueil</p>
           <p className="links">Séries</p>
           <p className="links">Films</p>
-          <p className="links">Nouveautées les plus regardées</p>
+          <p className="links">Nouveautés</p>
           <p className="links">Ma liste</p>
           <p className="links">Explorer par langue</p>
         </div>
