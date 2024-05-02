@@ -1,29 +1,25 @@
 .poster {
-    height: 150px;
-    width: auto;
+  height: 150px;
+  width: auto;
 }
 
 .poster:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-    transition: transform 0.5s;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.5s;
 }
 
 .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
-    margin-top: 50px;
-    margin-bottom: 50px;
-    color: white;
-}
-
-.link {
-    text-decoration: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
 }
 
 .movie_description {
-    max-width: 600px;
-    display: none;
+  max-width: 600px;
+  display: none;
 }
