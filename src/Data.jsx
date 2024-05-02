@@ -1,23 +1,37 @@
 import React, { useEffect, useState } from "react";
 
 const Data = () => {
-  const [Data, setData] = useState([]);
-  let movie_id = Math.random() * 700;
-  movie_id = Math.round(movie_id) + 200;
-  const url = `https://api.themoviedb.org/3/movie/${movie_id}?api_key=b4302baf8209ba84d052739967ae763f`;
-  const getData = async (url) => {
-    const rawData = await fetch(url);
+  // const [Data, setData] = useState([]);
+
+  const [movies, setMovies] = useState([]);
+  const [randomMovie, setRandomMovie] = useState(null);
+
+  const getData = async () => {
+    const rawData = await fetch(
+      `https://api.themoviedb.org/3/movie/popular?api_key=b4302baf8209ba84d052739967ae763f`
+    );
     const jsonData = await rawData.json();
-    setData(jsonData);
+    setMovies(jsonData.results);
+  };
+
+  const getRandomMovie = () => {
+    if (movies.length > 0) {
+      const randomIndex = Math.floor(Math.random() * movies.length);
+      setRandomMovie(movies[randomIndex]);
+    }
   };
 
   useEffect(() => {
-    getData(url);
+    getData();
   }, []);
-  console.log(Data);
 
-  return Data;
+  useEffect(() => {
+    getRandomMovie();
+  }, [movies]);
 
+  //   console.log(Data);
+
+  return randomMovie;
 };
 
 export default Data;
