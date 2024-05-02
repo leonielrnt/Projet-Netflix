@@ -1,11 +1,14 @@
 import React from "react";
 import "./header.css";
+import LogoVibe from "./assets/vibe-logo.svg";
 
 const Header = () => {
   return (
     <>
       <div className="header-container">
-        <h1>VIBE</h1>
+        <div className="header-logo">
+          <img src={LogoVibe} alt="logo vibe" />
+        </div>
         <div className="header-links">
           <p className="links">Accueil</p>
           <p className="links">Séries</p>

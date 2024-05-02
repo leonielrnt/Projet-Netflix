@@ -48,7 +48,9 @@ const Movies = () => {
             <div className="tags">
               <span>
                 {Data.adult ? "Adult" : "All audiences"} |{" "}
-                {/* {Data.genres.map((genres) => genres.name).join(", ")} |{" "} */}
+                {Data && Data.genres
+                  ? Data.genres.map((genre) => genre.name).join(", ")
+                  : ""}{" "}
               </span>
             </div>
             {/* <div className="movie-directors">
@@ -58,7 +60,7 @@ const Movies = () => {
             </div> */}
             <div className="movie-rating">
               <span className="rating-star">
-                <img src={StarIcon}  alt="star" /> {Data.vote_average}
+                <img src={StarIcon} alt="star" /> {Data.vote_average}
               </span>
             </div>
             <div className="movie-synopsis">

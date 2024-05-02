@@ -30,7 +30,21 @@ h3 {
   gap: 20px;
 }
 
+.rating-star {
+  display: flex;
+  align-items: center;
+}
+
 .rating-star img {
+  margin-right: 10px;
   height: 24px;
   width: 24px;
+}
+
+.redirection  {
+  color: #ecf0f1;
+}
+
+.content {
+  margin-bottom: 20px;
 }
