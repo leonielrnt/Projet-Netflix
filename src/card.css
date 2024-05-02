@@ -13,12 +13,19 @@
   display: none;
   position: absolute;
   max-width: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #080808;
   color: #ecf0f1;
-  padding: 20px;
+  padding: 0 20px;
   box-sizing: border-box;
+  padding: 20px 20px;
 }
 
 .content:hover .movie-description {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.overview {
+  font-weight: 500;
 }
