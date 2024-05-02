@@ -39,19 +39,15 @@ const Movies = () => {
       <Header />
       <h2 className="title">Popular right now</h2>
       <div className="cards">
-        <div className="row-container">
-          {movies.slice(0, 6).map((movie) => (
-            <Card key={movie.id} movie={movie} />
-          ))}
-        </div>
+        {movies.slice(0, 6).map((movie) => (
+          <Card key={movie.id} movie={movie} />
+        ))}
       </div>
       <h2 className="title">Users love these movies</h2>
       <div className="cards">
-        <div className="row-container">
-          {topRatedMovies.slice(0, 24).map((movie) => (
-            <Card key={movie.id} movie={movie} />
-          ))}
-        </div>
+        {topRatedMovies.slice(0, 24).map((movie) => (
+          <Card key={movie.id} movie={movie} />
+        ))}
       </div>
     </>
   );
