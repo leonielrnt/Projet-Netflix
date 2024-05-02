@@ -58,7 +58,7 @@ const Movies = () => {
             </div> */}
             <div className="movie-rating">
               <span className="rating-star">
-                <img src={StarIcon}  alt="star" /> {Data.vote_average}
+                <img src={StarIcon} alt="star" /> {Data.vote_average}
               </span>
             </div>
             <div className="movie-synopsis">

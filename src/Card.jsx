@@ -12,9 +12,10 @@ const Card = ({ movie }) => {
           className="poster"
         />
         <div className="movie-description">
-          <h1>{movie.title}</h1>
-          <span>{movie.runtime}</span>
-          <span>{movie.tagline}</span>
+          <h2>{movie.title}</h2>
+          <span className="overview">{movie.overview}</span>
+          <span>Released on : {movie.release_date}</span>
+          <span>Vote average : {movie.vote_average} /10</span>
         </div>
       </div>
     </Link>
