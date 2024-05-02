@@ -40,15 +40,18 @@ const Movies = () => {
           <div className="movie-info">
             <div className="info">
               <span>
-                {Data.release_date} | {Data.runtime} min |
+                {Data.release_date} | {Data.runtime} min |{" "}
                 {Data.original_language}
               </span>
             </div>
             <div className="tags">
               <span>
-                {Data.adult ? "Interdit aux moins de 18 ans" : "Tout public"} |
-                {Data.genres.name}
+                {Data.adult ? "Interdit aux moins de 18 ans" : "Tout public"} |{" "}
+                {/* {Data.genres.map((genres) => genres.name).join(", ")} |{" "} */}
               </span>
+            </div>
+            <div className="movie-rating">
+              <span></span>
             </div>
           </div>
         </div>
