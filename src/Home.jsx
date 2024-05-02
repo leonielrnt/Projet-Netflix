@@ -8,10 +8,12 @@ const Movies = () => {
     <>
       <Header />
       <h2 className="title">Tous les films</h2>
-      <div className="content">
-        {Array.from({ length: 6 }).map((_, i) => (
-          <Card key={i} />
-        ))}
+      <div className="cards">
+        <div className="row-container">
+          {Array.from({ length: 100 }).map((_, i) => (
+            <Card key={i} />
+          ))}
+        </div>
       </div>
       <h2 className="title">Les films populaires</h2>
     </>

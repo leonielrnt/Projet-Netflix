@@ -6,16 +6,6 @@
   max-width: 200px;
 }
 
-body {
-  background-color: #101010;
-  color: #ecf0f1;
-  padding: 0 80px;
-}
-
-.content {
-  max-width: 200px;
-}
-
 h1 {
   font-weight: 700;
 }
