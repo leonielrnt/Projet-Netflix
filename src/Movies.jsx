@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import "./movies.css";
 import { Link, useParams } from "react-router-dom";
+import StarIcon from "./assets/star-icon.svg";
 
 const Movies = () => {
   const { id } = useParams();
@@ -25,7 +26,7 @@ const Movies = () => {
       <Header />
       <Link to="/" className="link">
         <div className="content">
-          <div className="redirection">← Page d'accueil</div>
+          <span className="redirection">← Page d'accueil</span>
         </div>
       </Link>
       <div className="movie-container">
@@ -50,8 +51,19 @@ const Movies = () => {
                 {/* {Data.genres.map((genres) => genres.name).join(", ")} |{" "} */}
               </span>
             </div>
+            {/* <div className="movie-directors">
+              <span>
+                De 
+              </span>
+            </div> */}
             <div className="movie-rating">
-              <span></span>
+              <span className="rating-star">
+                <img src={StarIcon}  alt="star" /> {Data.vote_average}
+              </span>
+            </div>
+            <div className="movie-synopsis">
+              <h2>Synopsis</h2>
+              <p>{Data.overview}</p>
             </div>
           </div>
         </div>

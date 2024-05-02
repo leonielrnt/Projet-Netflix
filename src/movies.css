@@ -2,9 +2,18 @@
   text-decoration: none;
 }
 
+.link a {
+  max-width: 200px;
+}
+
 body {
   background-color: #101010;
   color: #ecf0f1;
+  padding: 0 80px;
+}
+
+.content {
+  max-width: 200px;
 }
 
 h1 {
@@ -24,4 +33,10 @@ h3 {
 .movie-details {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.rating-star img {
+  height: 24px;
+  width: 24px;
 }
