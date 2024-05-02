@@ -18,7 +18,7 @@ const Movies = () => {
 
   useEffect(() => {
     getData(url);
-  });
+  }, []);
   console.log(Data);
 
   return (
@@ -38,35 +38,33 @@ const Movies = () => {
         </div>
         <div className="movie-details">
           <h1 className="title">{Data.title}</h1>
-          <div className="movie-info">
-            <div className="info">
-              <span>
-                {Data.release_date} | {Data.runtime} min |{" "}
-                {Data.original_language}
-              </span>
-            </div>
-            <div className="tags">
-              <span>
-                {Data.adult ? "Adult" : "All audiences"} |{" "}
-                {Data && Data.genres
-                  ? Data.genres.map((genre) => genre.name).join(", ")
-                  : ""}{" "}
-              </span>
-            </div>
-            {/* <div className="movie-directors">
+          <div className="info">
+            <span>
+              {Data.release_date} | {Data.runtime} min |{" "}
+              {Data.original_language}
+            </span>
+          </div>
+          <div className="tags">
+            <span>
+              {Data.adult ? "Adult" : "All audiences"} |{" "}
+              {Data && Data.genres
+                ? Data.genres.map((genre) => genre.name).join(", ")
+                : ""}{" "}
+            </span>
+          </div>
+          {/* <div className="movie-directors">
               <span>
                 De 
               </span>
             </div> */}
-            <div className="movie-rating">
-              <span className="rating-star">
-                <img src={StarIcon} alt="star" /> {Data.vote_average}
-              </span>
-            </div>
-            <div className="movie-synopsis">
-              <h2>Synopsis</h2>
-              <p>{Data.overview}</p>
-            </div>
+          <div className="movie-rating">
+            <span className="rating-star">
+              <img src={StarIcon} alt="star" /> {Data.vote_average} / 10
+            </span>
+          </div>
+          <div className="movie-synopsis">
+            <h2>Synopsis</h2>
+            <p>{Data.overview}</p>
           </div>
         </div>
       </div>

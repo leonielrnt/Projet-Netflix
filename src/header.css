@@ -18,6 +18,7 @@
 .links:hover {
   text-decoration: underline;
   cursor: pointer;
+  color: #ff6b00;
 }
 
 .header-input {
