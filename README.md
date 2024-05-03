@@ -1,4 +1,4 @@
-## Présenntation du projet
+## Présentation du projet
 
 Ce projet a été réalisé par Elsa Menegaux, Léonie Laurent et Daniel Monka en classe de H2.
 
