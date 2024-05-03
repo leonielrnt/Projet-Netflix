@@ -8,10 +8,11 @@ const Movies = () => {
   const [topRatedMovies, setTopRatedMovies] = useState([]);
 
   const API_key = "b4302baf8209ba84d052739967ae763f";
-  const totalPages = 10;
+  const totalPages = 5;
   // nombre de pages de films populaires à chercher. Nombre arbitraire.
 
   const fetchData = async () => {
+    // films populaires, en ce moment
     const popularMovies = [];
 
     for (let page = 1; page <= totalPages; page++) {
@@ -27,6 +28,7 @@ const Movies = () => {
   };
 
   const fetchTopRatedMovies = async () => {
+    // films les mieux notés parmi tous
     const topRatedMovies = [];
 
     for (let page = 1; page <= totalPages; page++) {
