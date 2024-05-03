@@ -7,10 +7,11 @@ const Movies = () => {
   const [popularMovies, setMovies] = useState([]);
   const [topRatedMovies, setTopRatedMovies] = useState([]);
 
-  const fetchData = async () => {
-    const API_key = "b4302baf8209ba84d052739967ae763f";
+  const API_key = "b4302baf8209ba84d052739967ae763f";
+  const totalPages = 10;
+  // nombre de pages de films populaires à chercher. Nombre arbitraire.
 
-    const totalPages = 10;
+  const fetchData = async () => {
     const popularMovies = [];
 
     for (let page = 1; page <= totalPages; page++) {
@@ -22,14 +23,10 @@ const Movies = () => {
     }
 
     const shuffledMovies = popularMovies.sort(() => 0.5 - Math.random());
-    setMovies(shuffledMovies.slice(0, 6));
+    setMovies(shuffledMovies.slice(0, 7));
   };
 
   const fetchTopRatedMovies = async () => {
-    const API_key = "b4302baf8209ba84d052739967ae763f";
-
-    const totalPages = 10;
-    // nombre de pages de films popu à chercher. Nombre arbitraire.
     const topRatedMovies = [];
 
     for (let page = 1; page <= totalPages; page++) {
