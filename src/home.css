@@ -1,29 +1,1336 @@
-.poster {
-  height: 300px;
-  width: auto;
-}
-
-.poster:hover {
-  cursor: pointer;
-}
-
-.cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 50px;
-}
-
-.title {
-  color: #ecf0f1;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.movie_description {
-  max-width: 600px;
-  display: none;
-}
+.home-page {
+    background: #E0DDD6;
+    display: flex;
+    padding-top: 5.1rem;
+    width: 90rem;
+    box-sizing: border-box;
+  }
+  .home-page .footer {
+    background: var(--black, #333333);
+    margin: 0 0.1rem 0 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3rem 0;
+    width: 101.4rem;
+    box-sizing: border-box;
+  }
+  .home-page .highlighted-movie {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    position: relative;
+    margin: 0 7.2rem 2.6rem 7.2rem;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 16.8rem 0 15.3rem 4.9rem;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .home-page .rank-icon-text {
+    margin: 0 0rem 0.3rem 0rem;
+    display: flex;
+    align-self: flex-start;
+    box-sizing: border-box;
+  }
+  .home-page .nom-de-la-serie {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 4rem;
+    color: #FFFFFF;
+  }
+  .home-page .rank-icon-text-1 {
+    margin-bottom: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .home-page .top-10-badge {
+    margin: 0.4rem 0.9rem 0.4rem 0;
+    width: 2rem;
+    height: 2rem;
+  }
+  .home-page .number-4-in-france-today {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.9rem;
+    color: #FFFFFF;
+  }
+  .home-page .its-agood-idea-to-take-care-of-it-and-its-agood-idea-to-take-care-of-it-ir {
+    margin-bottom: 0.3rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--white, #FFFFFF);
+  }
+  .home-page .buttons {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: 31.2rem;
+    box-sizing: border-box;
+  }
+  .home-page .play-button {
+    border-radius: 0.3rem;
+    background: #FFFFFF;
+    margin-right: 2.1rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0.9rem 0;
+    width: 10.1rem;
+    box-sizing: border-box;
+  }
+  .home-page .more-info-button {
+    border-radius: 0.3rem;
+    background: var(--white-30-opacity, rgba(255, 255, 255, 0.3));
+    display: flex;
+    flex-direction: row;
+    padding: 0.9rem 0;
+    width: 19rem;
+    box-sizing: border-box;
+  }
+  .home-page .netflixde-popler {
+    position: absolute;
+    top: 43.1rem;
+    right: -4.1rem;
+    display: flex;
+    flex-direction: column;
+    width: 90.3rem;
+    height: 13.1rem;
+    box-sizing: border-box;
+  }
+  .home-page .popular {
+    margin-bottom: 0.6rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #333333;
+  }
+  .home-page .items {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.3rem;
+    width: 90.3rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-1 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-2 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-3 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-4 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    position: relative;
+    display: flex;
+    padding: 4.4rem 0 3.6rem 4.6rem;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .arrow-left {
+    position: relative;
+    display: flex;
+    width: 1.1rem;
+    height: 2rem;
+    box-sizing: border-box;
+  }
+  .home-page .izlemeye-devam-et {
+    margin: 0 7.2rem 1.5rem 7.2rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .home-page .kemal-keep-watching {
+    margin-bottom: 0.6rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #333333;
+  }
+  .home-page .category-line {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.3rem;
+    width: 90.3rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17.8rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17.8rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17.8rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17.8rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17.8rem;
+    box-sizing: border-box;
+  }
+  .home-page .gndemdekiler {
+    margin: 0 7.2rem 2.2rem 7.2rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .home-page .on-the-agenda {
+    margin-bottom: 0.6rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #333333;
+  }
+  .home-page .category-line-1 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.3rem;
+    width: 90.3rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-10 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-11 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-12 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-13 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-14 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .netflix-orijinalerikleri {
+    margin: 0 7.2rem 1.5rem 7.2rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .home-page .netflix-orijinalerikleri-1 {
+    margin-bottom: 0.6rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #333333;
+  }
+  .home-page .category-line-2 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.3rem;
+    width: 90.3rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-vertical-card {
+    display: flex;
+    width: 17.8rem;
+    height: 35.9rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-vertical-card-1 {
+    display: flex;
+    width: 17.8rem;
+    height: 35.9rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-vertical-card-2 {
+    display: flex;
+    width: 17.8rem;
+    height: 35.9rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-vertical-card-3 {
+    display: flex;
+    width: 17.8rem;
+    height: 35.9rem;
+    box-sizing: border-box;
+  }
+  .home-page .top-10-listesi {
+    margin: 0 7.2rem 1.4rem 7.2rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .home-page .todays-top-10-list-in-france {
+    margin-bottom: 0.6rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #333333;
+  }
+  .home-page .category-line-3 {
+    margin-left: 4.4rem;
+    display: flex;
+    flex-direction: row;
+    width: 85.9rem;
+    box-sizing: border-box;
+  }
+  .home-page .rank-card {
+    position: relative;
+    margin: 0 1.1rem 0.1rem 0;
+    padding: 0.5rem 0 0.4rem 0;
+    width: 13.4rem;
+    height: 12.8rem;
+    box-sizing: border-box;
+  }
+  .home-page .rank-card-1 {
+    position: relative;
+    margin: 0 1.1rem 0.1rem 0;
+    padding: 0.5rem 0 0.4rem 0;
+    width: 17rem;
+    height: 12.8rem;
+    box-sizing: border-box;
+  }
+  .home-page .rank-card-2 {
+    position: relative;
+    margin: 0 1.1rem 0.1rem 0;
+    padding: 0.5rem 0 0.4rem 0;
+    width: 17rem;
+    height: 12.8rem;
+    box-sizing: border-box;
+  }
+  .home-page .rank-card-3 {
+    position: relative;
+    margin: 0 0.3rem 0.1rem 0;
+    padding: 0.8rem 0 0.1rem 0;
+    width: 17rem;
+    height: 12.8rem;
+    box-sizing: border-box;
+  }
+  .home-page .rank-card-4 {
+    width: 17.8rem;
+    height: 12.9rem;
+  }
+  .home-page .yeniden-izle {
+    margin-bottom: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 108.4rem;
+    box-sizing: border-box;
+  }
+  .home-page .frame-1 {
+    margin: 0 75.4rem 0.6rem 0;
+    display: flex;
+    box-sizing: border-box;
+  }
+  .home-page .watch-again {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #333333;
+  }
+  .home-page .category-line-4 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.3rem;
+    width: 108.4rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-15 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-16 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-17 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-18 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .listem {
+    margin: 0 7.2rem 2rem 7.2rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .home-page .with-aletter {
+    margin-bottom: 0.6rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #333333;
+  }
+  .home-page .category-line-5 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.3rem;
+    width: 90.3rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-19 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-20 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-21 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-horizontal-card-22 {
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .header {
+    background: #E0DDD6;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.6rem 0;
+    box-sizing: border-box;
+  }
+  .home-page .container {
+    display: flex;
+    flex-direction: row;
+    width: 6rem;
+    box-sizing: border-box;
+  }
+  .home-page .container-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 108.4rem;
+    height: fit-content;
+    box-sizing: border-box;
+  }
+  .home-page .seslendirme-ve-alt-yaz {
+    margin-bottom: 0.9rem;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--gray, #808080);
+  }
+  .home-page .media-center {
+    margin-bottom: 0.9rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--gray, #808080);
+  }
+  .home-page .confidentially {
+    margin-bottom: 0.9rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--gray, #808080);
+  }
+  .home-page .bize-ulan {
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--gray, #808080);
+  }
+  .home-page .sesli-betimleme {
+    margin-bottom: 0.9rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--gray, #808080);
+  }
+  .home-page .yatrmc-iilileri {
+    margin-bottom: 0.9rem;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--gray, #808080);
+  }
+  .home-page .yasal-hkmler {
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--gray, #808080);
+  }
+  .home-page .yardm-merkezi {
+    margin-bottom: 0.9rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--gray, #808080);
+  }
+  .home-page .mkanlar {
+    margin: 0 0.7rem 0.9rem 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--gray, #808080);
+  }
+  .home-page .erez-tercihleri {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--gray, #808080);
+  }
+  .home-page .hediye-kartlar {
+    margin-bottom: 0.9rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--gray, #808080);
+  }
+  .home-page .kullanm-koullar {
+    margin-bottom: 0.9rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--gray, #808080);
+  }
+  .home-page .kurumsal-bilgiler {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--gray, #808080);
+  }
+  .home-page .vibe-inc-all-rights-reserved {
+    margin-right: 54.6rem;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 0.7rem;
+    color: var(--gray, #808080);
+  }
+  .home-page .hizmet-kodu-button {
+    border: 0.1rem solid var(--gray, #808080);
+    margin: 0 62.2rem 1.3rem 0;
+    display: flex;
+    padding: 0.6rem 0.9rem;
+    box-sizing: border-box;
+  }
+  .home-page .hizmet-kodu {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--gray, #808080);
+  }
+  .home-page .column-01 {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .home-page .column-02 {
+    margin-bottom: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .home-page .column-03 {
+    margin-bottom: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .home-page .column-04 {
+    margin-bottom: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .home-page .links {
+    margin-bottom: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 66.6rem;
+    box-sizing: border-box;
+  }
+  .home-page .play {
+    margin: 0.4rem 1.5rem 0.4rem 0;
+    display: flex;
+    width: 1.3rem;
+    height: 1.3rem;
+    box-sizing: border-box;
+  }
+  .home-page .vector-6 {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .home-page .oynat {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--black, #333333);
+  }
+  .home-page .detail {
+    margin: 0.2rem 1.4rem 0.2rem 0;
+    display: flex;
+    width: 1.7rem;
+    height: 1.7rem;
+    box-sizing: border-box;
+  }
+  .home-page .vector-7 {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+  .home-page .daha-fazla-bilgi {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--white, #FFFFFF);
+  }
+  .home-page .movie-poster-1 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .movie-poster-2 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .movie-poster-3 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .movie-poster-4 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .arrow {
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    height: 100%;
+  }
+  .home-page .vector-8 {
+    width: 1.1rem;
+    height: 2rem;
+  }
+  .home-page .movie-poster-7 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .progress-bar {
+    background: rgba(109, 109, 110, 0.7);
+    position: relative;
+    width: 10.9rem;
+    height: 0.2rem;
+    box-sizing: border-box;
+  }
+  .home-page .progress {
+    background: var(--red, #6562F5);
+    width: 1.3rem;
+    height: 0.2rem;
+  }
+  .home-page .movie-poster-8 {
+    margin-bottom: 0.5rem;
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-poster-9 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .progress-bar-2 {
+    background: rgba(109, 109, 110, 0.7);
+    position: relative;
+    width: 10.9rem;
+    height: 0.2rem;
+    box-sizing: border-box;
+  }
+  .home-page .progress-1 {
+    background: var(--red, #6562F5);
+    width: 1.3rem;
+    height: 0.2rem;
+  }
+  .home-page .movie-poster-10 {
+    margin-bottom: 0.5rem;
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-poster-11 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .progress-bar-4 {
+    background: rgba(109, 109, 110, 0.7);
+    position: relative;
+    width: 10.9rem;
+    height: 0.2rem;
+    box-sizing: border-box;
+  }
+  .home-page .progress-2 {
+    background: var(--red, #6562F5);
+    width: 1.3rem;
+    height: 0.2rem;
+  }
+  .home-page .movie-poster-12 {
+    margin-bottom: 0.5rem;
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-poster-13 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .progress-bar-6 {
+    background: rgba(109, 109, 110, 0.7);
+    position: relative;
+    width: 10.9rem;
+    height: 0.2rem;
+    box-sizing: border-box;
+  }
+  .home-page .progress-3 {
+    background: var(--red, #6562F5);
+    width: 1.3rem;
+    height: 0.2rem;
+  }
+  .home-page .movie-poster-14 {
+    margin-bottom: 0.5rem;
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .progress-bar-8 {
+    background: rgba(109, 109, 110, 0.7);
+    position: relative;
+    width: 10.9rem;
+    height: 0.2rem;
+    box-sizing: border-box;
+  }
+  .home-page .progress-4 {
+    background: var(--red, #6562F5);
+    width: 1.3rem;
+    height: 0.2rem;
+  }
+  .home-page .arrow-left-1 {
+    display: flex;
+    width: 1.1rem;
+    height: 2rem;
+    box-sizing: border-box;
+  }
+  .home-page .vector-9 {
+    width: 1.1rem;
+    height: 2rem;
+  }
+  .home-page .arrow-1 {
+    border-radius: 0.1rem 0 0 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    position: relative;
+    margin-bottom: 0.5rem;
+    display: flex;
+    padding: 3.8rem 0 4.2rem 5.2rem;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-poster-15 {
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .movie-poster-16 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .movie-poster-17 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .movie-poster-18 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .rectangle-21 {
+    border-radius: 0.1rem 0 0 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 0rem;
+    translate: -50% 0;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .arrow-left-2 {
+    position: relative;
+    display: flex;
+    width: 1.1rem;
+    height: 2rem;
+    box-sizing: border-box;
+  }
+  .home-page .vector-10 {
+    width: 1.1rem;
+    height: 2rem;
+  }
+  .home-page .arrow-2 {
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    position: relative;
+    display: flex;
+    padding: 3.8rem 0 4.2rem 5.2rem;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-poster-19 {
+    border-radius: 0.3rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 35.9rem;
+  }
+  .home-page .movie-poster-20 {
+    border-radius: 0.3rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 35.9rem;
+  }
+  .home-page .movie-poster-21 {
+    border-radius: 0.3rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 35.9rem;
+  }
+  .home-page .movie-poster-22 {
+    border-radius: 0.3rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 35.9rem;
+  }
+  .home-page .movie-poster-24 {
+    border-radius: 0.3rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 0rem;
+    translate: -50% 0;
+    width: 17.8rem;
+    height: 35.9rem;
+  }
+  .home-page .arrow-right {
+    position: relative;
+    display: flex;
+    width: 1.2rem;
+    height: 2.1rem;
+    box-sizing: border-box;
+  }
+  .home-page .vector-11 {
+    width: 1.2rem;
+    height: 2.1rem;
+  }
+  .home-page .arrow-3 {
+    border-radius: 0.3rem;
+    background: url('../assets/images/movie_poster_2.png') 50% / cover no-repeat;
+    position: relative;
+    display: flex;
+    padding: 16.9rem 0.1rem 16.9rem 0;
+    width: 17.8rem;
+    height: 35.9rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-poster-25 {
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    width: 9.1rem;
+    height: 12.8rem;
+  }
+  .home-page .rank-01 {
+    position: relative;
+    width: 4.7rem;
+    height: 11.9rem;
+  }
+  .home-page .vector-12 {
+    position: absolute;
+    top: 0rem;
+    right: -0.5rem;
+    width: 5.2rem;
+    height: 11.9rem;
+  }
+  .home-page .movie-poster-26 {
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    width: 9.1rem;
+    height: 12.8rem;
+  }
+  .home-page .rank-02 {
+    position: relative;
+    width: 8.3rem;
+    height: 11.9rem;
+  }
+  .home-page .vector-13 {
+    position: absolute;
+    top: 0rem;
+    right: -0.4rem;
+    width: 8.6rem;
+    height: 11.9rem;
+  }
+  .home-page .movie-poster-27 {
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    width: 9.1rem;
+    height: 12.8rem;
+  }
+  .home-page .rank-03 {
+    position: relative;
+    width: 8.3rem;
+    height: 11.9rem;
+  }
+  .home-page .vector-14 {
+    position: absolute;
+    top: 0rem;
+    right: -0.4rem;
+    width: 8.7rem;
+    height: 11.9rem;
+  }
+  .home-page .movie-poster-28 {
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    width: 9.1rem;
+    height: 12.8rem;
+  }
+  .home-page .rank-04 {
+    position: relative;
+    width: 8.3rem;
+    height: 11.9rem;
+  }
+  .home-page .vector-15 {
+    position: absolute;
+    top: 0rem;
+    right: -1.5rem;
+    width: 9.8rem;
+    height: 11.9rem;
+  }
+  .home-page .rectangle-22 {
+    border-radius: 0.1rem 0 0 0.1rem;
+    background: rgba(20, 20, 20, 0.5);
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    height: 100%;
+  }
+  .home-page .arrow-left-3 {
+    position: relative;
+    display: flex;
+    width: 1.1rem;
+    height: 2rem;
+    box-sizing: border-box;
+  }
+  .home-page .vector-18 {
+    width: 1.1rem;
+    height: 2rem;
+  }
+  .home-page .arrow-5 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    position: relative;
+    display: flex;
+    padding: 3.8rem 0 4.2rem 5.2rem;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-poster-32 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .movie-poster-33 {
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    display: flex;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-poster-34 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .movie-poster-35 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .movie-poster-36 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .rectangle-23 {
+    border-radius: 0.1rem 0 0 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    height: 100%;
+  }
+  .home-page .arrow-left-4 {
+    position: relative;
+    display: flex;
+    width: 1.1rem;
+    height: 2rem;
+    box-sizing: border-box;
+  }
+  .home-page .vector-19 {
+    width: 1.1rem;
+    height: 2rem;
+  }
+  .home-page .arrow-6 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/movie_poster_1.png') 50% / cover no-repeat;
+    position: relative;
+    display: flex;
+    padding: 3.8rem 0 4.2rem 5.2rem;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .movie-poster-39 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .movie-poster-40 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .movie-poster-41 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .movie-poster-42 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .rectangle-24 {
+    border-radius: 0.1rem 0 0 0.1rem;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 50%;
+    top: 0rem;
+    translate: -50% 0;
+    width: 17.8rem;
+    height: 10rem;
+  }
+  .home-page .arrow-left-5 {
+    position: relative;
+    display: flex;
+    width: 1.1rem;
+    height: 2rem;
+    box-sizing: border-box;
+  }
+  .home-page .vector-20 {
+    width: 1.1rem;
+    height: 2rem;
+  }
+  .home-page .arrow-7 {
+    border-radius: 0.1rem;
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    position: relative;
+    display: flex;
+    padding: 3.8rem 0 4.2rem 5.2rem;
+    width: 17.8rem;
+    height: 10rem;
+    box-sizing: border-box;
+  }
+  .home-page .film {
+    margin-right: 1.3rem;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #333333;
+  }
+  .home-page .serie {
+    margin-right: 1.3rem;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #333333;
+  }
+  .home-page .popular-1 {
+    margin-right: 1.3rem;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #333333;
+  }
+  .home-page .with-aletter-1 {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #333333;
+  }
+  .home-page .search {
+    margin: 0.4rem 0;
+    display: flex;
+    width: 1.2rem;
+    height: 1.3rem;
+    box-sizing: border-box;
+  }
+  .home-page .vector-21 {
+    width: 1.2rem;
+    height: 1.3rem;
+  }
+  .home-page .down-arrow {
+    margin: 0.8rem 0;
+    display: flex;
+    width: 0.9rem;
+    height: 0.4rem;
+    box-sizing: border-box;
+  }
+  .home-page .vector-22 {
+    width: 0.9rem;
+    height: 0.4rem;
+  }
+  .home-page .notification-bell {
+    margin: 0.4rem 1.3rem 0.4rem 0;
+    display: flex;
+    width: 1.2rem;
+    height: 1.3rem;
+    box-sizing: border-box;
+  }
+  .home-page .group {
+    width: 1.2rem;
+    height: 1.3rem;
+  }
+  .home-page .menu-items {
+    margin: 2.3rem 0;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  .home-page .header-left {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  .home-page .profile-img {
+    background: url('../assets/images/profile_img.png') 50% / cover no-repeat;
+    margin-right: 0.6rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  .home-page .header-right {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 11rem;
+    height: fit-content;
+    box-sizing: border-box;
+  }
+  .home-page .img-dropdown {
+    display: flex;
+    flex-direction: row;
+    width: 3.5rem;
+    box-sizing: border-box;
+  }
+  .home-page .frame-24 {
+    margin-right: 4.3rem;
+    display: flex;
+    box-sizing: border-box;
+  }
+  .home-page .vibe {
+    box-shadow: 0.3rem 0.3rem 0rem 0rem #000000;
+    border: 0.1rem solid rgba(51, 51, 51, 0.2);
+    overflow-wrap: break-word;
+    font-family: 'Dongle';
+    font-weight: 700;
+    font-size: 6rem;
+    letter-spacing: -0.4rem;
+    line-height: 1;
+    color: #E0DDD6;
+  }
