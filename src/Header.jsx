@@ -21,7 +21,7 @@ const Header = () => {
           <p className="links">Explore by language</p>
         </div>
         <div className="header-input">
-          <input type="text" placeholder="Rechercher un film ou une série" />
+          <input type="text" placeholder="Search a movie or series" />
           <button>Search</button>
         </div>
       </div>
