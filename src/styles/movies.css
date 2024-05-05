@@ -1,18 +1,16 @@
-.all-content {
-  margin-top: 140px;
-}
-
 .movie-container {
+  margin-top: 140px;
   margin-left: 50%;
   transform: translateX(-50%);
+  width: 70%;
+  padding: 40px;
   display: flex;
   flex-direction: row;
   gap: 40px;
-  width: 70%;
-  padding: 40px;
-  border-radius: 5px;
-  background-color: #5a5a5a1b;
+  background-color: #181818;
   color: #e0ddd6;
+  border-radius: 10px;
+  border: 1px solid #e0ddd6;
 }
 
 .movie-poster img {
@@ -50,9 +48,11 @@
 }
 .genres span {
   font-size: 20px;
+  font-weight: 600;
   padding: 5px 15px;
   border-radius: 50px;
   background-color: #101010;
+  border: 0.7px solid #ff6b00;
 }
 
 .movie-rating {

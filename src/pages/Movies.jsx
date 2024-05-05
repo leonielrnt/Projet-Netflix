@@ -21,42 +21,55 @@ const Movies = () => {
   return (
     <>
       <Header />
-      <div className="all-content">
-        <div className="movie-container">
-          <div className="movie-poster">
-            <img
-              src={`https://image.tmdb.org/t/p/w500${Data.poster_path}`}
-              alt="poster"
-            />
+      <div
+        className="full-screen-container"
+        style={{
+          backgroundImage: `url(https://image.tmdb.org/t/p/w500${Data.poster_path})`,
+          backgroundSize: "cover",
+          height: "100%",
+          width: "100%",
+          position: "absolute",
+          zIndex: -1,
+          top: 0,
+          left: 0,
+          opacity: 0.5,
+          filter: "blur(5px)",
+        }}
+      />
+      <div className="movie-container">
+        <div className="movie-poster">
+          <img
+            src={`https://image.tmdb.org/t/p/w500${Data.poster_path}`}
+            alt="poster"
+          />
+        </div>
+        <div className="movie-details">
+          <div className="genres">
+            {Data && Data.genres
+              ? Data.genres.map((genre) => (
+                  <span key={genre.id} className="genre-span">
+                    {genre.name}
+                  </span>
+                ))
+              : ""}
           </div>
-          <div className="movie-details">
-            <div className="genres">
-              {Data && Data.genres
-                ? Data.genres.map((genre) => (
-                    <span key={genre.id} className="genre-span">
-                      {genre.name}
-                    </span>
-                  ))
-                : ""}
-            </div>
-            <h1 className="title">{Data.title}</h1>
-            <div className="info">
-              <span>{Data.release_date} </span>
-              <span>{Data.runtime} min</span>
-              <span>{Data.original_language}</span>
-            </div>
-            <div className="audience">
-              <span>{Data.adult ? "Adult" : "All audiences"} </span>
-            </div>
-            <div className="movie-rating">
-              <span className="rating-star">
-                <img src={StarIcon} alt="star" /> {Data.vote_average} / 10
-              </span>
-            </div>
-            <div className="movie-synopsis">
-              <span className="tagline">{Data.tagline}</span>
-              <p>{Data.overview}</p>
-            </div>
+          <h1 className="title">{Data.title}</h1>
+          <div className="info">
+            <span>{Data.release_date} </span>
+            <span>{Data.runtime} min</span>
+            <span>{Data.original_language}</span>
+          </div>
+          <div className="audience">
+            <span>{Data.adult ? "Adult" : "All audiences"} </span>
+          </div>
+          <div className="movie-rating">
+            <span className="rating-star">
+              <img src={StarIcon} alt="star" /> {Data.vote_average} / 10
+            </span>
+          </div>
+          <div className="movie-synopsis">
+            <span className="tagline">{Data.tagline}</span>
+            <p>{Data.overview}</p>
           </div>
         </div>
       </div>
