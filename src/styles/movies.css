@@ -1,3 +1,15 @@
+.full-screen-container {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  filter: "blur(5px)";
+}
+
 .movie-container {
   margin-top: 140px;
   margin-left: 50%;
@@ -32,6 +44,7 @@
   flex-direction: row;
   gap: 30px;
 }
+
 .audience {
   font-size: 20px;
   margin-bottom: 5px;
@@ -40,6 +53,7 @@
   align-items: center;
   gap: 30px;
 }
+
 .genres {
   display: flex;
   flex-direction: row;
@@ -58,14 +72,12 @@
 .movie-rating {
   margin-bottom: 10px;
 }
-
 .rating-star {
   display: flex;
   align-items: center;
   font-weight: 700;
   color: #ff6b00;
 }
-
 .rating-star img {
   margin-right: 10px;
   height: 24px;
@@ -79,4 +91,18 @@
 }
 .tagline {
   font-style: italic;
+}
+
+.similar-movies {
+  margin-top: 40px;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.similar-movies-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
