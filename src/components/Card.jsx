@@ -12,6 +12,21 @@ const Card = ({ movie }) => {
           className="poster"
         />
         <div className="movie-description">
+          <div
+            className="full-screen-container"
+            style={{
+              backgroundImage: `url(https://image.tmdb.org/t/p/w500${movie.poster_path})`,
+              backgroundSize: "cover",
+              height: "100%",
+              width: "100%",
+              position: "absolute",
+              zIndex: -1,
+              top: 0,
+              left: 0,
+              opacity: 0.2,
+              filter: "blur(5px)",
+            }}
+          />
           <span>
             <h2>{movie.title}</h2>
             <span className="italic">Click to see more </span>
