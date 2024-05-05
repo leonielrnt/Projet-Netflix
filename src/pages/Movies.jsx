@@ -33,8 +33,6 @@ const Movies = () => {
     getSimilarMovies(similarUrl);
   }, []);
 
-  console.log(similarMovies);
-
   return (
     <>
       <Header />
@@ -86,8 +84,8 @@ const Movies = () => {
         <div className="similar-movies">
           <h2>Similar Movies</h2>
           <div className="similar-movies-cards">
-            {similarMovies.map((movie) => (
-              <Card key={movie.id} movie={movie} />
+            {similarMovies.map((similarMovie) => (
+              <Card key={similarMovie.id} movie={similarMovie} />
             ))}
           </div>
         </div>

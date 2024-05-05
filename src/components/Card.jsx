@@ -13,7 +13,7 @@ const Card = ({ movie }) => {
         />
         <div className="movie-description">
           <div
-            className="background-image-container"
+            className="full-screen-container"
             style={{
               backgroundImage: `url(https://image.tmdb.org/t/p/w500${movie.poster_path})`,
               backgroundSize: "cover",

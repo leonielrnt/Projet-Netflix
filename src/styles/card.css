@@ -38,7 +38,7 @@
   opacity: 0.6;
 }
 
-.content:hover .movie-description {
+.card-content:hover .movie-description {
   display: flex;
   flex-direction: column;
   gap: 20px;
