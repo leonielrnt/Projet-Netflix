@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import "./movies.css";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import StarIcon from "./assets/star-icon.svg";
 
 const Movies = () => {
@@ -24,11 +24,6 @@ const Movies = () => {
   return (
     <>
       <Header />
-      <Link to="/" className="link">
-        <div className="content">
-          <span className="redirection">← Page d'accueil</span>
-        </div>
-      </Link>
       <div className="movie-container">
         <div className="movie-poster">
           <img
