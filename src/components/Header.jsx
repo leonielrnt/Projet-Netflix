@@ -1,6 +1,6 @@
 import React from "react";
-import "./header.css";
-import LogoVibe from "./assets/vibe-logo.svg";
+import "../styles/header.css";
+import LogoVibe from "../assets/vibe-logo.svg";
 import { Link } from "react-router-dom";
 
 const Header = () => {

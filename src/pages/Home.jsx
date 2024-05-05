@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Card from "./Card";
-import Header from "./Header";
-import "./home.css";
+import Card from "../components/Card";
+import Header from "../components/Header";
+import "../styles/home.css";
 
 const Movies = () => {
   const [popularMovies, setMovies] = useState([]);
@@ -24,7 +24,7 @@ const Movies = () => {
     }
 
     const shuffledMovies = popularMovies.sort(() => 0.5 - Math.random());
-    setMovies(shuffledMovies.slice(0, 7));
+    setMovies(shuffledMovies.slice(0, 6));
   };
 
   const fetchTopRatedMovies = async () => {

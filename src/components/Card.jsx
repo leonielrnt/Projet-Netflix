@@ -1,5 +1,5 @@
 import React from "react";
-import "./card.css";
+import "../styles/card.css";
 import { Link } from "react-router-dom";
 
 const Card = ({ movie }) => {

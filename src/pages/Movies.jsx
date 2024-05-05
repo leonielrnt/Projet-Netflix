@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Header from "./Header";
-import "./movies.css";
+import Header from "../components/Header";
+import "../styles/movies.css";
 import { useParams } from "react-router-dom";
-import StarIcon from "./assets/star-icon.svg";
+import StarIcon from "../assets/star-icon.svg";
 
 const Movies = () => {
   const { id } = useParams();
