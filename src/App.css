@@ -1,21 +1,20 @@
 body {
   background-color: #101010;
-  color: #ecf0f1;
+  color: #e0ddd6;
   font-size: 24px;
-  padding: 0px 80px;
 }
 
 h1 {
   font-weight: 700;
-  line-height: 70%;
+  line-height: 50%;
 }
 
 h2 {
   font-weight: 700;
-  line-height: 70%;
+  line-height: 50%;
 }
 
 h3 {
   font-weight: 500;
-  line-height: 70%;
+  line-height: 50%;
 }

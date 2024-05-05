@@ -53,17 +53,19 @@ const Movies = () => {
   return (
     <>
       <Header />
-      <h2 className="title">Popular right now</h2>
-      <div className="cards">
-        {popularMovies.map((movie) => (
-          <Card key={movie.id} movie={movie} />
-        ))}
-      </div>
-      <h2 className="title">Users love these movies</h2>
-      <div className="cards">
-        {topRatedMovies.map((movie) => (
-          <Card key={movie.id} movie={movie} />
-        ))}
+      <div className="all-content">
+        <h2 className="title">Popular right now</h2>
+        <div className="cards">
+          {popularMovies.map((movie) => (
+            <Card key={movie.id} movie={movie} />
+          ))}
+        </div>
+        <h2 className="title">Users love these movies</h2>
+        <div className="cards">
+          {topRatedMovies.map((movie) => (
+            <Card key={movie.id} movie={movie} />
+          ))}
+        </div>
       </div>
     </>
   );

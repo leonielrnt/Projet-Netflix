@@ -1,3 +1,8 @@
+.all-content {
+  padding: 0 80px;
+  margin-top: 140px;
+}
+
 .poster {
   height: 300px;
   width: auto;
@@ -16,7 +21,7 @@
 }
 
 .title {
-  color: #ecf0f1;
+  color: #e0ddd6;
 }
 
 .link {

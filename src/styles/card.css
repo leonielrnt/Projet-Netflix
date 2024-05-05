@@ -16,12 +16,26 @@
 .movie-description {
   display: none;
   position: absolute;
+  z-index: 999;
   max-width: 50%;
-  background-color: #080808;
+  background-color: #101010;
+  border: 1px solid #e0ddd6;
   color: #ecf0f1;
   padding: 0 20px;
   box-sizing: border-box;
   padding: 20px 20px;
+  font-size: 20px;
+}
+.movie-description span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.italic {
+  font-style: italic;
+  font-size: 20px;
+  opacity: 0.6;
 }
 
 .content:hover .movie-description {

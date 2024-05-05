@@ -1,3 +1,7 @@
+.all-content {
+  margin-top: 140px;
+}
+
 .movie-container {
   margin-left: 50%;
   transform: translateX(-50%);
@@ -5,15 +9,10 @@
   flex-direction: row;
   gap: 40px;
   width: 70%;
-
   padding: 40px;
   border-radius: 5px;
   background-color: #5a5a5a1b;
-  color: #ecf0f1;
-}
-
-.movie-poster {
-  background: linear-gradient(0deg, #181818, transparent 50%);
+  color: #e0ddd6;
 }
 
 .movie-poster img {
@@ -71,10 +70,6 @@
   margin-right: 10px;
   height: 24px;
   width: 24px;
-}
-
-.redirection {
-  color: #ecf0f1;
 }
 
 .movie-synopsis {
