@@ -42,6 +42,7 @@ const Movies = () => {
     const shuffledTopRatedMovies = topRatedMovies.sort(
       () => 0.5 - Math.random()
     );
+    // on en sélectionne, encore une fois, un nombre arbitraire.
     setTopRatedMovies(shuffledTopRatedMovies.slice(0, 28));
   };
 
